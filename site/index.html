@@ -1,132 +1,128 @@
 <!doctype html>
-<!--Pour voir avec GNFA
--->
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Le Bistrot Chinois</title>
+    <title>David Chu's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">   
-  
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
-  
-  <body>
-    
-    <!-- entete -->
-    <header>
-      <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="">
-              <div id="logo-img" alt="Logo" class="pull-left visible-md visible-lg"></div><!--La class Pull-left de bootstrap permet de flotter le logo à gauche la div navbar-brand peut venir se positionner à sa droite-->
-              <!-- les class visible-lg et md permettent de cacher l'élément quand la fenêtre devient petite -->
-            </a>
-            <div class="navbar-brand">
-              <div class="pull-left">
-                <a href="index.html"><h1>David Chu's China Bistro</h1></a>
-              </div>
-              <p>
-                <img src="img/star-k-logo.png" alt="Certifié casher">
-                <span>Certifié casher</span>
-              </p>
-            </div>
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <!--Le data target est à définir : ici c'est une exemple-->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-pliable" aria-expanded="false">
-              <!--Il faut toujours laisser cet attribut à false (pour lecteur d'écran)-->
-              <span class="sr-only">Toggle navigation</span><!--sr-only = screen reader only ==> ne seront pas visibles dans la page -->
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-          </div><!--fin navbar-header-->
-
-    <!--******************************************** Menu pliable ******************************************-->              
-        <div id="menu-pliable" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="visible-xs active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Accueil</a></li>
-            <li><a href="menu-categories.html"><span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Infos</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Bonus</a></li>
-            <li id="phone" class="hidden-xs"><!--Pour cacher cet item en écran smartphone pour mettre le n° en avant-->
-              <a href="tel:0684504252"><!--permet d'appeler en cliquant le lien-->
-                <span>06 84 50 42 52</span></a><div>* Nous Livrons</div></li>
-          </ul><!--nav-list-->
-        </div><!--fin menu-pliable-->               
-    </div><!--fin container-->
-  </nav><!--fin header-nav-->
-</header>
-    <!--************************************** téléphone pour XS *******************************************-->
-    <div id="call-btn" class="visible-xs">
-      <a class="btn" href="tel:0684504252"><span class="glyphicon glyphicon-earphone"></span> 0684504252</a>
-    </div>
-    <div id="xs-deliver" class="text-center visible-xs">* Nous livrons</div>
-
-    <!--************************************** Contenu principal ****************************************-->
-    <div id="main-content" class="container">
-      <div class="jumbotron">
-        <img src="img/jumbotron_768.jpg" alt="Photo du restaurant" class="img-responsive visible-xs">
-      </div><!--fin jumbotron-->
-
-      <div id="briques-accueil" class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <a href="https://goo.gl/maps/g3XJu41pRM9NFJL26" target="_blank"><div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.2775102522883!2d-0.5016365487048665!3d43.89151884490238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55d1f266081b6b%3A0xfee10075cb662ab7!2sBrasserie%20Le%20DONJON!5e0!3m2!1sfr!2sfr!4v1620764440232!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <span>plan</span>
-          </div>
-          </a>
-          
-        </div>
-
-
-      </div><!--fin briques-accueil-->
-
-    </div><!--Fin main-content-->
-
-    <!--******************* Pied de page (footer) ******************-->
-    <footer class="panel-footer">
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
-        <div class="row">
-          <section id="horaires" class="col-sm-4">
-            <span>horaires :</span><br>
-            Lundi au vendredi : 12h00 - 14h00 et 19h00 - 21h00<br>
-            Samedi : 12h00 - 15h00<br>
-            Fermé le dimanche
-            <hr class="visible-xs"> <!--c'est un trait-->
-          </section>
-          <section id="adresse" class="col-sm-4">
-            <span>Adresse :</span><br>
-            Place du donjon<br>
-            40000 Mont de Marsan
-            <p>* Nous livrons gratuitement jusqu'à 3kms pour 10 euros d'achats</p>
-            <hr class="visible-xs"> <!--c'est un trait-->
-          </section>
-          <section id="temoignages" class="col-sm-4">
-            <p>"J'adore manger au donjon !"<br>Evelyne</p>
-            <p>"J'y vais de temps en temps avec ma mère : J'aime !"<br>Janny</p>
-            <p>"Moi j'aimerais bien mais on ne m'invite jamais !"<br>Patrick</p>
-            <hr class="visible-xs"> <!--c'est un trait-->
-          </section>
-        </div><!--fin row-->
-        <div class="text-center">&copy; Copyright Patrockanite - 2021</div>
-      </div><!--fin container-->
-    </footer>
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
 
+          <div class="navbar-brand">
+            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
+          </div>
 
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div>
+
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span>map</span>
+          </div>
+        </a>
+      </div>
+    </div><!-- End of #home-tiles -->
+  </div><!-- End of #main-content -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
